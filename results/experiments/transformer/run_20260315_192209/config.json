@@ -1,0 +1,22 @@
+{
+    "data_files": [
+        "data/raw/CIC-IDS-2017_fin_capped.csv",
+        "data/raw/full_unsw.csv"
+    ],
+    "label_names": [
+        "Label",
+        "label",
+        "attack_cat",
+        "class"
+    ],
+    "batch_size": 64,
+    "epochs": 10,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "embedding_dim": 128,
+    "num_layers": 3,
+    "num_heads": 4,
+    "dropout": 0.2,
+    "seed": 42,
+    "resume": true
+}
