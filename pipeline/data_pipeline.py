@@ -133,7 +133,7 @@ def create_loaders(X, M, y, batch_size, seed=42):
     print(f"Number of workers use to load data {num_workers}")
 
     print(f"Train:{train_len}  Val:{val_len}  Test:{test_len}")
-
+    print("Create loader Ended.")
     return (
         DataLoader(train_set, batch_size=batch_size, shuffle=True,
                    num_workers=num_workers, pin_memory=True, persistent_workers=True),
