@@ -5,6 +5,7 @@ from .transformer_no_mask import TransformerNoMask
 from .ann import ANNModel
 from .cnn import CNNModel
 from .lstm import LSTMModel
+from .ft_transformer import FTTransformer
 
 
 def get_model(name, num_features, config):
@@ -12,6 +13,9 @@ def get_model(name, num_features, config):
     if name == "transformer_v2":
         return LTMModel_v2(num_features, config)
     
+    elif name == "ft_transformer":
+        return FTTransformer(num_features, config)
+
     elif name == "transformer":
         return LTMModel(num_features, config)
 

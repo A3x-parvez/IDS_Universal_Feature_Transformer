@@ -1,6 +1,7 @@
 MODELS = [
-    "transformer_v2",
     "transformer",
+    "transformer_v2",
+    "ft_transformer", 
     "transformer_no_attention",
     "transformer_no_mask",
     "ann",
